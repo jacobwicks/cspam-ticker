@@ -1,0 +1,37 @@
+{
+  "name": "cspam-ticker",
+  "version": "1.0.0",
+  "description": "CSPAM stock ticker style scrolling marquee",
+  "main": "server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "server": "ts-node-dev server.ts"
+  },
+  "author": "Jacob Wicks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jacobwicks/saBotAPI/issues"
+  },
+  "homepage": "https://github.com/jacobwicks/saBotAPI#readme",
+  "dependencies": {
+    "@types/app-root-path": "^1.2.4",
+    "@types/body-parser": "^1.19.0",
+    "@types/cheerio": "^0.22.18",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/node-fetch": "^2.5.7",
+    "app-root-path": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "ts-node": "^8.10.1",
+    "tslib": "^2.0.1",
+    "typescript": "^3.9.2"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.62"
+  }
+}

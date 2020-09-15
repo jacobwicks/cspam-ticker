@@ -1,0 +1,82 @@
+@font-face {
+  font-family: chomsky;
+  src: url("/Fonts/chomsky.otf") format("opentype");
+}
+
+@font-face {
+  font-family: ticker;
+  src: url("/Fonts/subwayTicker.ttf") format("truetype");
+}
+
+.smallTitle {
+  font-family: serif;
+}
+
+.jumbotron {
+  font-family: chomsky;
+}
+
+.ticker {
+  font-family: ticker;
+}
+
+a:link {
+  color: black;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+@keyframes slide {
+  from {
+    left: 100%;
+    transform: translate(0, 0);
+  }
+  to {
+    left: -100%;
+    transform: translate(-100%, 0);
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    left: 100%;
+    transform: translate(0, 0);
+  }
+  to {
+    left: -100%;
+    transform: translate(-100%, 0);
+  }
+}
+
+.jumbotron {
+  width: 750px;
+}
+.marquee {
+  color: black;
+  background: #f0f0f0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  height: 60;
+  font-size: 30px;
+  animation-name: slide;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 30s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}

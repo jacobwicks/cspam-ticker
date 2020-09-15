@@ -1,0 +1,41 @@
+a javascript app
+given a forum id
+it scrapes the forum for the latest post from the first non-stickied thread
+every 15 seconds
+it runs the text of the post across the screen
+looks like an old stock ticker
+
+
+const getThreadsFromForumId = (forumId: number) => {
+//https://forums.somethingawful.com/forumdisplay.php?forumid=269
+
+}
+
+const isNotSticky = (thread) => {
+//thread doesn't have sticky icon
+//<td class="title title_sticky">
+//</td>
+}
+
+const getFirstNotStickiedThread = () => {
+const threads = await getThreadsFromForumId(forumId);
+const firstNotStickyThread = threads.find(thread => isNotSticky(thread));
+const { threadId } = firstNotStickyThread;
+return threadId;
+}
+
+const getLatestPostFromThread = (threadId) => {
+
+}
+
+const getLatestPost = () => {
+const thread = await getFirstNotStickiedThread();
+const post = getLatestPostFromThread(thread);
+
+}
+
+export const threadLastPost = (threadId: number) =>
+    `${baseUrl}/showthread.php?threadid=${threadId}&goto=lastpost`;
+
+
+If the post is still scrolling when we get the next post, then cut it off

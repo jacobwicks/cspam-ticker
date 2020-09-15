@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSPAM TICKER</title>
+    <script>
+      var exports = {};
+    </script>
+    <script type="module" src="/ListenToEvents/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      body {
+        padding-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>The C-Spam Ticker</h1>
+        <h4 class="smallTitle">
+          <img src="images.png" width="60" /><i>Better Posts In Real Time</i>
+        </h4>
+      </div>
+    </div>
+    <div class="marquee">
+      <div id="messageTicker" class="text ticker"></div>
+    </div>
+    <div class="marquee">
+      <div id="infoTicker" class="text ticker"></div>
+    </div>
+  </body>
+</html>
