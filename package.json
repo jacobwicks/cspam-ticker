@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
     "server": "ts-node-dev server.ts",
-    "start": "cd scripts && server.js"
+    "start": "cd Scripts && server.js"
   },
   "author": "Jacob Wicks",
   "license": "ISC",
