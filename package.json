@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "CSPAM stock ticker style scrolling marquee",
   "main": "server.ts",
+  "engines": {
+    "node": "14.5.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
