@@ -1,11 +1,13 @@
 import { LogEvent } from "../types";
 
+const port = process.env.PORT || 3001;
+
 const listenToEvents = () => {
   try {
     console.log("trying to listen to events");
     const route = "logEvent";
     // const eventUrl = `${apiUrl}${route}`;
-    const eventUrl = `http://localhost:3001/${route}`;
+    const eventUrl = `https://cspam-ticker.herokuapp.com/${route}`;
     const events = new EventSource(eventUrl);
 
     events.onmessage = (event) => {
