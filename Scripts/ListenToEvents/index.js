@@ -1,6 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const port = process.env.PORT || 3001;
 const listenToEvents = () => {
     try {
         console.log("trying to listen to events");
