@@ -14,7 +14,7 @@ const eventsHandler = async (req, res, next) => {
     //OK!
     res.writeHead(200, headers);
     const startingEvents = Events_1.makeEvent({
-        body: "Subscribing to CSPAM Times Real Time Ticker...",
+        body: "Subscribing to CSPAM Times Real Time Ticker... All the Shit that's fit to Print...",
     });
     const stringData = JSON.stringify(startingEvents);
     // After client opens connection send log events, bot settings

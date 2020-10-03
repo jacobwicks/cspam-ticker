@@ -26,7 +26,8 @@ const eventsHandler = async (
   res.writeHead(200, headers);
 
   const startingEvents = makeEvent({
-    body: "Subscribing to CSPAM Times Real Time Ticker...",
+    body:
+      "Subscribing to CSPAM Times Real Time Ticker... All the Shit that's fit to Print...",
   });
 
   const stringData = JSON.stringify(startingEvents);
