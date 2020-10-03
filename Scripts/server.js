@@ -11,6 +11,9 @@ const app = CreateExpressApp_1.default();
 app.get("/", async (req, res) => {
     res.sendFile(path_1.default.join(__dirname + "/index.html"));
 });
+app.get("/forums", async (req, res) => {
+    res.sendFile(path_1.default.join(__dirname + "/index.html"));
+});
 app.get(EventRoute_1.routePath, EventRoute_1.eventRoute);
 const server = http.createServer();
 server

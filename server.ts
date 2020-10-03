@@ -12,6 +12,10 @@ app.get("/", async (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
 
+app.get("/forums", async (req, res) => {
+  res.sendFile(path.join(__dirname + "/index.html"));
+});
+
 app.get(routePath, eventRoute);
 
 const server = http.createServer();
