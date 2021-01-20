@@ -35,21 +35,25 @@ const listenToEvents = () => {
                     }
                     const infoTicker = document.getElementById("infoTicker");
                     if (infoTicker) {
-                        const authorLink = document.createElement("a");
-                        authorLink.href = post.author.profile;
-                        authorLink.innerText = post.author.name;
-                        authorLink.target = "_blank";
-                        const threadLink = document.createElement("a");
-                        threadLink.href = `https://forums.somethingawful.com/showthread.php?threadid=${post.thread.threadId}`;
-                        threadLink.innerText = post.thread.title;
-                        threadLink.target = "_blank";
                         const infoContainer = document.createElement("span");
                         infoContainer.classList.add("text");
+                        if (post.author) {
+                            const authorLink = document.createElement("a");
+                            authorLink.href = post.author.profile;
+                            authorLink.innerText = post.author.name;
+                            authorLink.target = "_blank";
+                            infoContainer.appendChild(authorLink);
+                        }
+                        if (post.thread) {
+                            const threadLink = document.createElement("a");
+                            threadLink.href = `https://forums.somethingawful.com/showthread.php?threadid=${post.thread.threadId}`;
+                            threadLink.innerText = post.thread.title;
+                            threadLink.target = "_blank";
+                            infoContainer.appendChild(threadLink);
+                        }
                         const spacing = document.createElement("span");
                         spacing.innerText = ":   ";
-                        infoContainer.appendChild(authorLink);
                         infoContainer.appendChild(spacing);
-                        infoContainer.appendChild(threadLink);
                         const child = infoTicker.childNodes[0];
                         child
                             ? infoTicker.replaceChild(infoContainer, child)
@@ -61,7 +65,7 @@ const listenToEvents = () => {
     }
     catch (err) {
         // eventsDispatch({ type: EventsActionTypes.failed });
-        return undefined;
+        return;
     }
 };
 listenToEvents();

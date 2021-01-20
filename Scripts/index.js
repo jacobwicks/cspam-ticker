@@ -45,8 +45,9 @@ const sendLatestPostToTicker = async () => {
         }
     }
 };
-exports.runAtInterval = () => {
+const runAtInterval = () => {
     sendLatestPostToTicker();
     setTimeout(() => exports.runAtInterval(), 15000);
 };
+exports.runAtInterval = runAtInterval;
 //# sourceMappingURL=index.js.map

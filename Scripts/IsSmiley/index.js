@@ -10,6 +10,7 @@ exports.isSmiley = void 0;
 //maybe come back and figure all these out, but then again... maybe not
 const smiley = "https://fi.somethingawful.com/safs/smilies";
 const smiley2 = "https://fi.somethingawful.com/images/smilies";
-exports.isSmiley = (img) => img.slice(0, smiley.length) === smiley ||
+const isSmiley = (img) => img.slice(0, smiley.length) === smiley ||
     img.slice(0, smiley2.length) === smiley2;
+exports.isSmiley = isSmiley;
 //# sourceMappingURL=index.js.map

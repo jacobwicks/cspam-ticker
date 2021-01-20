@@ -1,0 +1,10 @@
+:root {
+    --text-primary: #eacf4c;
+    --bg-primary: #000;
+    --bg-secondary: #373b41;
+}
+
+.jumbotron, .marquee {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAABytg0kAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAABlJREFUeNpi9HWR+M/AwMDIBCKA+D9AgAEAGfsCrVbpGIsAAAAASUVORK5CYII=);
+    background-repeat: repeat;
+}
