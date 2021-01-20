@@ -1,0 +1,31 @@
+@keyframes slide {
+    from {
+        left: 100%;
+        transform: translate(0, 0);
+    }
+    to {
+        left: -100%;
+        transform: translate(-100%, 0);
+    }
+}
+@-webkit-keyframes slide {
+    from {
+        left: 100%;
+        transform: translate(0, 0);
+    }
+    to {
+        left: -100%;
+        transform: translate(-100%, 0);
+    }
+}
+
+.text {
+    animation-name: slide;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
