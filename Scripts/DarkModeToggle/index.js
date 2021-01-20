@@ -1,5 +1,10 @@
 "use strict";
 let darkMode = JSON.parse(localStorage.getItem('darkMode') || 'false');
+const themes = [
+    'light.css',
+    'incorrect.css',
+    'correct.css'
+];
 const toggleBtn = document.getElementById('dark-mode-toggle');
 const cssLink = document.getElementById('theme-css');
 if (toggleBtn && cssLink) {

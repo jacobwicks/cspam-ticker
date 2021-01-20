@@ -40,6 +40,8 @@ body {
 .jumbotron {
   width: 750px;
   background: var(--bg-secondary);
+  border-radius: 0 !important;
+  border: 1px solid var(--text-primary);
 }
 
 .marquee {
@@ -49,6 +51,15 @@ body {
   overflow: hidden;
   position: relative;
   background: var(--bg-secondary);
+  border-top: 1px solid var(--text-primary);
+  z-index: 3;
+}
+
+.marquee:last-child {
+  margin-top: -1px; /*Background image repeat will be 1px off and look weird without this*/
+  z-index: 2;
+  border-top: none;
+  border-bottom: 1px solid var(--text-primary);
 }
 
 .text {
@@ -59,7 +70,7 @@ body {
   font-size: 30px;
 }
 
-#dark-mode-toggle {
+#theme-toggle {
   position: fixed;
   top: 10px;
   right: 10px;
