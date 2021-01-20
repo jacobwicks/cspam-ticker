@@ -31,7 +31,7 @@ export interface SAUser {
 
 export interface Post {
   //the name of the user that wrote the post
-  author: SAUser;
+  author?: SAUser;
 
   //the body of the post, without other quoted posts inside it
   body: string;
@@ -53,7 +53,7 @@ export interface Post {
 }
 
 export interface LogPost extends Post {
-  thread: ArrayThread;
+  thread?: ArrayThread;
 }
 export type LogEvent = {
   time: string;
